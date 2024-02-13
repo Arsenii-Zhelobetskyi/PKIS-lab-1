@@ -1,7 +1,7 @@
 package task2;
 
 public class Task2 {
-    static void findRepeats(String text) {// знаходить повтори
+    static  public void  findRepeats(String text) {// знаходить повтори
         String[] words = text.replaceAll("[-+.^:,$@!\\\\/()\\[\\]*&%#?|;_\n']", " ").trim().split(" ");
         // replaceALl-прибираємо зайві символи
         // trim-видаляємо зайві пробіли
