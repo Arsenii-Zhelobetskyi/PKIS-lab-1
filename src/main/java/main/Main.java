@@ -2,11 +2,15 @@ package main;
 
 import java.util.Scanner;// для прочитання інформації з консолі
 import task1.Task1;
-
+import task2.Task2;
 
 class Main {// головна програма
 
     public static void main(String[] args) {
+
+
+        // 1 завдання
+
         Task1 task1Instance = new Task1(); // зробимо два пакети, бо нам потрібно розмістити два завдання в одному репозиторії;
 
         Scanner in = new Scanner(System.in);//для того, щоб організувати читання інформації з консолі
@@ -33,5 +37,29 @@ class Main {// головна програма
             table.print(x, y1, y2, y3, er1, er2);// виведення таблиці
         }
         table.close();//виведення розмежувача
+
+
+
+        // 2 завдання
+
+
     }
 }
+
+
+//public class Main {
+//
+//
+//    public static void main(String[] args) {
+//        Scanner in = new Scanner(System.in);// Для прочитання інформації з консолі
+//        String text;
+//        while (true) {
+//            System.out.print("Введіть рядок ->");
+//            text = in.nextLine();
+//            if (text.length() == 0)
+//                System.out.println("Помилка вводу, повторіть спробу");
+//            else break;
+//        }
+//        findRepeats(text);
+//    }
+//}
