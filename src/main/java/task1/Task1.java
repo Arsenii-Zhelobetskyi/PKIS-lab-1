@@ -1,15 +1,21 @@
 package task1;
 
 public class Task1 {
+    /**
+     * обчислення функції f(x), використовуючи її розкладання в степеневий ряд у трьох випадках
+     */
+    public class Functions {
 
-    public class functions {//обчислення функції f(x), використовуючи її розкладання в степеневий ряд у трьох випадках:
-
-        //    1) для "точного" значення (за аналітичною формулою).
+        /**
+         *  1) для "точного" значення (за аналітичною формулою).
+         */    
         public float f1(float x) {
             return (float) Math.exp(x);
         }
 
-        //    2) для заданого k (запитати в користувача);
+        /**
+         * 2) для заданого k (запитати в користувача);
+         */    
         public float f2(float x, float kMax) {
             int k = 0;
             float a = 1.0f;// черговий елемент
@@ -23,7 +29,11 @@ public class Task1 {
         }
 
 
-        //    3) для заданої точності e (запитати в користувача);
+        /**
+         * 3) для заданої точності e (запитати в користувача);
+         * @param x - argument of the exponent
+         * @param eps - desired accuracy
+         */
         public float f3(float x, float eps) {
             // kMax- той К який ми запитуємо у користувача
             int k = 0;
@@ -39,8 +49,10 @@ public class Task1 {
         }
 
     }
-
-    public class printTable {//для виведення таблиці
+    /**
+     * для виведення таблиці
+     */
+    public class PrintTable {
         private
         int argumentsLength;//змінна необхідна для того, щоб красиво вивести таблицю
 
@@ -51,7 +63,7 @@ public class Task1 {
             System.out.println("+");
         }
 
-        public printTable(String... arguments) {//arguments - отримати усі аргументи в одну змінну
+        public PrintTable(String... arguments) {//arguments - отримати усі аргументи в одну змінну
             String s1 = " ";
             //конструктор
             argumentsLength = arguments.length;
